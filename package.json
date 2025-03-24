@@ -5,8 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "format": "biome format --write",
-    "start": "bun src/index.ts"
+    "format": "biome format --write src",
+    "format:dist": "biome format --write dist",
+    "start": "bun src/index.ts && bun format:dist"
   },
   "keywords": [],
   "author": "",
